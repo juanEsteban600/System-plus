@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>System Plus | Profesor</title>
+
+    <link rel="stylesheet" href="../CSS/profesor.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="brand">
+            SYSTEM PLUS
+        </div>
+
+        <nav class="topbar-nav">
+
+            <a href="dashboard.html" class="home-link">
+                🏠 Inicio
+            </a>
+
+            <a href="perfil.html" class="user-name">
+                👤 ADMIN
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ESTRUCTURA -->
+    <div class="layout">
+
+        <!-- PANEL IZQUIERDO -->
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                📘Curso
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="curso.html">
+                    🏠 Inicio del curso
+                </a>
+
+                <a href="contenido.html">
+                    📚 Contenido
+                </a>
+
+                <a href="calificaciones.html">
+                    📊 Calificaciones
+                </a>
+
+                <a href="profesor.html" class="active">
+                    👨‍🏫 Profesor
+                </a>
+
+                <a href="horario.html">
+                    🕐 Horario
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <a href="cerrar sesion.html" class="logout-button">
+                    🚪 Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+        <main class="main-content">
+
+            <section class="profesor-page">
+
+                <div class="section-heading">
+
+                    <span>
+                        INFORMACIÓN ACADÉMICA
+                    </span>
+
+                    <h2>
+                        Profesor
+                    </h2>
+
+                </div>
+
+
+                <!-- INFORMACIÓN DEL PROFESOR -->
+
+                <div class="profesor-container">
+
+                    <div class="profesor-icon">
+                        👨‍🏫
+                    </div>
+
+                    <div class="profesor-info">
+
+                        <span class="profesor-label">
+                            DOCENTE
+                        </span>
+
+                        <h3 id="nombre-profesor">
+                             Fabian Fernando
+                        </h3>
+
+                        <p>
+                            Profesor del curso Desarrollo Web.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="datos-profesor">
+
+                    <div class="dato">
+
+                        <span>
+                            Nombre completo
+                        </span>
+
+                        <strong id="nombre-completo">
+                            Fabian Fernando Yusti
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <span>
+                            Curso
+                        </span>
+
+                        <strong>
+                            Desarrollo Web
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <span>
+                            Área
+                        </span>
+
+                        <strong>
+                            Informatíca
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <span>
+                            Estado
+                        </span>
+
+                        <strong class="estado">
+                            Activo
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../JS/profesor.js"></script>
+
+</body>
+</html>

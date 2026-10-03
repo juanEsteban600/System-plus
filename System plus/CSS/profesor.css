@@ -1,0 +1,523 @@
+/* =========================================================
+   SYSTEM PLUS
+   PROFESOR
+========================================================= */
+
+:root {
+
+    --red: #c8102e;
+    --red-dark: #a80d25;
+    --red-light: #fff1f4;
+
+    --white: #ffffff;
+    --dark: #171717;
+    --gray: #777777;
+    --gray-light: #f5f6f8;
+    --border: #e5e5e5;
+
+    --green: #16834b;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    --radius: 10px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--gray-light);
+
+    color: var(--dark);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.topbar {
+
+    height: 72px;
+    width: 100%;
+
+    background: var(--red);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.brand {
+
+    color: var(--white);
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.topbar-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.home-link,
+.user-name {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    transition: background 0.2s ease;
+}
+
+
+.home-link:hover,
+.user-name:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.user-name {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ESTRUCTURA
+========================================================= */
+
+.layout {
+
+    display: flex;
+
+    min-height: calc(100vh - 72px);
+}
+
+
+/* =========================================================
+   PANEL IZQUIERDO
+========================================================= */
+
+.sidebar {
+
+    width: 245px;
+
+    background: var(--red);
+
+    color: var(--white);
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: fixed;
+
+    top: 72px;
+
+    left: 0;
+
+    bottom: 0;
+
+    z-index: 900;
+
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.sidebar-title {
+
+    padding: 25px 22px 18px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+.sidebar-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 14px 10px;
+}
+
+
+.sidebar-menu a {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 13px 14px;
+
+    margin-bottom: 4px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.sidebar-menu a:hover {
+
+    background: rgba(255, 255, 255, 0.13);
+
+    transform: translateX(2px);
+}
+
+
+.sidebar-menu a.active {
+
+    background: var(--white);
+
+    color: var(--red);
+
+    font-weight: 700;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    padding: 15px 10px 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+.logout-button {
+
+    display: block;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding: 13px 14px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.logout-button:hover {
+
+    background: rgba(0, 0, 0, 0.16);
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.main-content {
+
+    margin-left: 245px;
+
+    width: calc(100% - 245px);
+
+    padding: 32px 35px 50px;
+}
+
+
+.profesor-page {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading > span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--red);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+
+.section-heading h2 {
+
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 27px;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   PROFESOR
+========================================================= */
+
+.profesor-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+.profesor-icon {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: var(--red-light);
+
+    border-radius: 12px;
+
+    font-size: 34px;
+}
+
+
+.profesor-label {
+
+    display: block;
+
+    color: var(--red);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+}
+
+
+.profesor-info h3 {
+
+    color: var(--dark);
+
+    font-size: 22px;
+
+    margin-bottom: 7px;
+}
+
+
+.profesor-info p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DATOS
+========================================================= */
+
+.datos-profesor {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.dato {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 20px 22px;
+
+    box-shadow: var(--shadow);
+}
+
+
+.dato span {
+
+    display: block;
+
+    color: var(--gray);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+
+    margin-bottom: 7px;
+}
+
+
+.dato strong {
+
+    color: var(--dark);
+
+    font-size: 14px;
+}
+
+
+.dato .estado {
+
+    color: var(--green);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .main-content {
+
+        padding: 25px 20px 40px;
+    }
+
+
+    .datos-profesor {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .main-content {
+
+        padding: 20px 15px 35px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 24px;
+    }
+
+
+    .profesor-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

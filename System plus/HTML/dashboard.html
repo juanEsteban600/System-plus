@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>System Plus | Inicio</title>
+
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="topbar">
+
+        <div class="brand">
+            SYSTEM PLUS
+        </div>
+
+
+        <nav class="header-nav">
+
+            <a href="dashboard.html" class="active">
+                🏠 Inicio
+            </a>
+
+        </nav>
+
+
+        <a href="perfil.html" class="user">
+            👤 <span>ADMIN</span>
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         LAYOUT
+    ========================== -->
+
+    <div class="layout">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+    <nav>
+
+        <a href="dashboard.html" class="sidebar-item">
+            🏠 <span>Inicio</span>
+        </a>
+
+        <a href="perfil.html" class="sidebar-item">
+            👤 <span>Perfil</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <button
+            type="button"
+            class="logout-button"
+            id="logoutButton"
+        >
+            🚪 <span>Cerrar sesión</span>
+        </button>
+
+    </div>
+
+</aside>
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main-content">
+
+
+            <!-- =========================
+                 WELCOME
+            ========================== -->
+
+            <section class="welcome">
+
+                <span>BIENVENIDO</span>
+
+                <h1>
+                    Hola, ADMIN 👋
+                </h1>
+
+                <p>
+                    Continúa aprendiendo y revisa tu progreso.
+                </p>
+
+            </section>
+
+
+
+            <!-- =========================
+                 RESUMEN ACADÉMICO
+            ========================== -->
+
+            <section class="summary">
+
+    <article>
+        <div>📚</div>
+        <span>Cursos activos</span>
+        <strong id="activeCourses">0</strong>
+    </article>
+
+    <article>
+        <div>📈</div>
+        <span>Progreso general</span>
+        <strong id="generalProgress">0%</strong>
+    </article>
+
+    <article>
+        <div>✅</div>
+        <span>Cursos terminados</span>
+        <strong id="completedCourses">0</strong>
+    </article>
+
+</section>
+
+
+
+            <!-- =========================
+                 CURSOS
+            ========================== -->
+
+            <section>
+
+
+                <div class="section-title">
+
+                    <span>
+                        MI FORMACIÓN
+                    </span>
+
+                    <h2>
+                        Mis cursos
+                    </h2>
+
+                </div>
+
+
+                <!--
+                    Los cursos son generados
+                    mediante dashboard.js
+                -->
+
+                <div
+                    class="courses-grid"
+                    id="coursesGrid">
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../JS/dashboard.js"></script>
+
+
+</body>
+
+</html>
+

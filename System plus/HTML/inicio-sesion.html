@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 | Inicio de sesión</title>
+
+    <link rel="stylesheet" href="../CSS/inicio-sesion.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+         ===================================================== -->
+
+    <main class="login-page">
+
+
+        <!-- =================================================
+             PANEL SYSTEM PLUS
+             ================================================= -->
+
+        <section class="brand-panel">
+
+            <!-- Logo -->
+            <img
+                src="../IMG/logo-system-plus.png.jpg"
+                alt="System Plus"
+                class="system-logo"
+            >
+
+
+            <!-- Texto principal -->
+
+            <div class="brand-text">
+
+                <span>
+                    PORTAL ACADÉMICO
+                </span>
+
+                <h1>
+                    Tu información
+                    <strong>en un solo lugar.</strong>
+                </h1>
+
+                <p>
+                    Accede a tus cursos, notas y
+                    información académica.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOGIN
+             ================================================= -->
+
+        <section class="login-panel">
+
+
+            <div class="login-box">
+
+
+                <!-- Q10 -->
+
+                <div class="q10-logo">
+                    Q10
+                </div>
+
+
+                <!-- Título -->
+
+                <div class="login-header">
+
+                    <span>
+                        ACCESO ACADÉMICO
+                    </span>
+
+                    <h2>
+                        Bienvenido
+                    </h2>
+
+                    <p>
+                        Ingresa tus datos para continuar.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORMULARIO
+                     ================================================= -->
+
+                <form id="loginForm">
+
+
+                    <!-- Usuario -->
+
+                    <div class="input-group">
+
+                        <label for="usuario">
+                            Usuario
+                        </label>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            placeholder="Ingresa tu usuario"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Contraseña -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Ingresa tu contraseña"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                aria-label="Mostrar contraseña"
+                            >
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Mensaje -->
+
+                    <div
+                        id="loginMessage"
+                        class="login-message"
+                    ></div>
+
+
+
+                    <!-- Botón -->
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                    >
+                        Iniciar sesión
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- Volver -->
+
+                <a
+                    href="informacion.html"
+                    class="back-link"
+                >
+                    ← Volver a información
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="../JS/inicio-sesion.js"></script>
+
+</body>
+
+</html>

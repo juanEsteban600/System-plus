@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Plus | perfil </title>
+
+    <link rel="stylesheet"href="../CSS/perfil.css">
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+    <div class="brand">
+        SYSTEM PLUS
+    </div>
+
+
+    <nav class="header-nav">
+
+        <a href="dashboard.html">
+            🏠 Inicio
+        </a>
+
+    </nav>
+
+
+    <a
+        href="perfil.html"
+        class="user active-user"
+    >
+        👤 ADMIN
+    </a>
+
+</header>
+
+
+
+<div class="layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+    <nav>
+
+        <a href="dashboard.html" class="sidebar-item">
+            🏠 <span>Inicio</span>
+        </a>
+
+        <a href="perfil.html" class="sidebar-item">
+            👤 <span>Perfil</span>
+        </a>
+
+    </nav>
+
+   <div class="sidebar-bottom">
+         <button type="button" class="logout-button" id="logoutButton" >
+         🚪 <span>Cerrar sesión</span> </button> 
+    </div>
+
+</aside>
+
+
+
+    <!-- =========================
+         CONTENIDO
+    ========================== -->
+
+    <main class="main-content">
+
+
+       <section class="heading">
+
+    <div class="heading-top">
+
+        <div>
+
+            <span>CUENTA</span>
+
+            <h1>Información personal</h1>
+
+            <p>
+                Consulta la información registrada en tu cuenta académica.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="window.location.href='dashboard.html'"
+        >
+            ← Volver al inicio
+        </button>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =========================
+             INFORMACIÓN PERSONAL
+        ========================== -->
+
+        <section class="profile-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    INFORMACIÓN PERSONAL
+                </span>
+
+                <h2>
+                    Datos personales
+                </h2>
+
+            </div>
+
+
+
+            <div class="form-grid">
+
+
+                <!-- PRIMER NOMBRE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Primer nombre
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        value="JUAN"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- SEGUNDO NOMBRE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Segundo nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="middleName"
+                        value="ESTEBAN"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- PRIMER APELLIDO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Primer apellido
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        value="ORTIZ"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- SEGUNDO APELLIDO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Segundo apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="secondLastName"
+                        value="RENDON"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- TIPO IDENTIFICACIÓN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Tipo de identificación
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="documentType"
+                        value="T.I."
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- NÚMERO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Número de identificación
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="documentNumber"
+                        value="1112404597"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- SEXO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Sexo
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="gender"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- CORREO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Correo electrónico
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- TELÉFONO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="text"
+                        id="phone"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- CELULAR -->
+
+                <div class="form-group">
+
+                    <label>
+                        Celular
+                    </label>
+
+                    <input
+                        type="text"
+                        id="mobile"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- FECHA NACIMIENTO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Fecha de nacimiento
+                        <b>*</b>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="birthDate"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- LUGAR NACIMIENTO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Lugar de nacimiento
+                    </label>
+
+                    <input
+                        type="text"
+                        id="birthPlace"
+                        value="Buga (Valle del Cauca)"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- DIRECCIÓN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- LUGAR RESIDENCIA -->
+
+                <div class="form-group">
+
+                    <label>
+                        Lugar de residencia
+                    </label>
+
+                    <input
+                        type="text"
+                        id="residence"
+                        value="Buga (Valle del Cauca)"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- BARRIO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Barrio
+                    </label>
+
+                    <input
+                        type="text"
+                        id="neighborhood"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             INFORMACIÓN SIET
+        ========================== -->
+
+        <section class="profile-section">
+
+
+            <div class="section-header">
+
+                <span>
+                    INFORMACIÓN ADICIONAL (SIET)
+                </span>
+
+                <h2>
+                    Información adicional
+                </h2>
+
+            </div>
+
+
+
+            <div class="form-grid">
+
+
+                <!-- ZONA -->
+
+                <div class="form-group">
+
+                    <label>
+                        Zona
+                    </label>
+
+                    <input
+                        type="text"
+                        id="zone"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- ESTRATO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Estrato
+                    </label>
+
+                    <input
+                        type="text"
+                        id="stratum"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- TRANSPORTE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Medio de transporte
+                    </label>
+
+                    <input
+                        type="text"
+                        id="transport"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- EXPEDICIÓN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Lugar de expedición del documento
+                    </label>
+
+                    <input
+                        type="text"
+                        id="documentPlace"
+                        value="Buga (Valle del Cauca)"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- ESTADO CIVIL -->
+
+                <div class="form-group">
+
+                    <label>
+                        Estado civil
+                    </label>
+
+                    <input
+                        type="text"
+                        id="maritalStatus"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- FORMACIÓN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Nivel de formación
+                    </label>
+
+                    <input
+                        type="text"
+                        id="educationLevel"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- OCUPACIÓN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Ocupación
+                    </label>
+
+                    <input
+                        type="text"
+                        id="occupation"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- GRUPO SISBÉN -->
+
+                <div class="form-group">
+
+                    <label>
+                        Grupo Sisbén
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sisbenGroup"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- SUBGRUPO -->
+
+                <div class="form-group">
+
+                    <label>
+                        Subgrupo Sisbén
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sisbenSubgroup"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- EPS -->
+
+                <div class="form-group">
+
+                    <label>
+                        EPS
+                    </label>
+
+                    <input
+                        type="text"
+                        id="eps"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- ARS -->
+
+                <div class="form-group">
+
+                    <label>
+                        ARS
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ars"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- ASEGURADORA -->
+
+                <div class="form-group">
+
+                    <label>
+                        Aseguradora
+                    </label>
+
+                    <input
+                        type="text"
+                        id="insurance"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- DISCAPACIDAD -->
+
+                <div class="form-group">
+
+                    <label>
+                        Discapacidad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="disability"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- MULTICULTURALIDAD -->
+
+                <div class="form-group">
+
+                    <label>
+                        Multiculturalidad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="multicultural"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- TIPO SANGRE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Tipo de sangre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bloodType"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- HIJOS -->
+
+                <div class="form-group">
+
+                    <label>
+                        Número de hijos
+                    </label>
+
+                    <input
+                        type="text"
+                        id="children"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- LIBRETA -->
+
+                <div class="form-group">
+
+                    <label>
+                        Número libreta militar
+                    </label>
+
+                    <input
+                        type="text"
+                        id="militaryBook"
+                        value=""
+                        readonly
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<script src="../JS/perfil.js"></script>
+
+</body>
+
+</html>

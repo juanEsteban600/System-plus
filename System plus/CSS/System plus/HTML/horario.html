@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Plus | Horario</title>
+    <link rel="stylesheet" href="../CSS/horario.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+        <div class="brand">SYSTEM PLUS</div>
+
+        <nav class="topbar-nav">
+            <a href="dashboard.html" class="home-link">🏠 Inicio</a>
+            <a href="perfil.html" class="user-name">👤 ADMIN</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                 📘Curso
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="curso.html">
+                    🏠 Inicio del curso
+                </a>
+
+                <a href="contenido.html">
+                    📚 Contenido
+                </a>
+
+                <a href="calificaciones.html">
+                    📊 Calificaciones
+                </a>
+
+                <a href="profesor.html">
+                    👨‍🏫 Profesor
+                </a>
+
+                <a href="horario.html" class="active">
+                    🕐 Horario
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="cerrar sesion.html" class="logout-button">
+                    🚪 Cerrar sesión
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido-main">
+
+            <div class="contenido-header">
+                <span>INFORMACIÓN ACADÉMICA</span>
+                <h1>Horario</h1>
+                <p>Horario del curso Desarrollo Web.</p>
+            </div>
+
+            <!-- INFORMACIÓN DEL HORARIO -->
+            <section class="horario-card">
+
+                <div class="horario-icon">
+                    🕐
+                </div>
+
+                <div class="horario-info">
+
+                    <div class="dato">
+                        <span>CURSO</span>
+                        <strong id="curso">Desarrollo Web</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>DOCENTE</span>
+                        <strong id="profesor">Fabian Fernando Yusti</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>MODALIDAD</span>
+                        <strong id="modalidad">Presencial</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- TABLA DE HORARIO -->
+            <section class="horario-seccion">
+
+                <h2>Horario de clases</h2>
+
+                <div class="tabla-container">
+
+                   <section class="horario-seccion">
+
+    <h2>Horario de clases</h2>
+
+    <div class="tabla-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Fecha</th>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Actividad</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla-horario">
+
+                <tr>
+                    <td>Octubre</td>
+                    <td>3 de octubre</td>
+                    <td>Sábado</td>
+                    <td>7:00 AM - 12:00 PM</td>
+                    <td>Clase de Desarrollo Web</td>
+                </tr>
+
+                <tr>
+                    <td>Octubre</td>
+                    <td>10 de octubre</td>
+                    <td>Sábado</td>
+                    <td>7:00 AM - 12:00 PM</td>
+                    <td>Clase de Desarrollo Web</td>
+                </tr>
+
+                <tr>
+                    <td>Octubre</td>
+                    <td>17 de octubre</td>
+                    <td>Sábado</td>
+                    <td>7:00 AM - 12:00 PM</td>
+                    <td>Clase de Desarrollo Web</td>
+                </tr>
+
+                <tr>
+                    <td>Octubre</td>
+                    <td>24 de octubre</td>
+                    <td>Sábado</td>
+                    <td>7:00 AM - 12:00 PM</td>
+                    <td>Clase de Desarrollo Web</td>
+                </tr>
+
+                <tr>
+                    <td>Octubre</td>
+                    <td>31 de octubre</td>
+                    <td>Sábado</td>
+                    <td>7:00 AM - 12:00 PM</td>
+                    <td>Clase de Desarrollo Web</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+    <script src="../JS/horario.js"></script>
+
+</body>
+</html>

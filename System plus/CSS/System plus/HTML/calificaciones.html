@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>System Plus | Calificaciones</title>
+
+    <link rel="stylesheet" href="../CSS/calificaciones.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+    ====================================================== -->
+
+    <header class="topbar">
+
+        <div class="brand">
+            SYSTEM PLUS
+        </div>
+
+        <nav class="topbar-nav">
+
+            <a href="dashboard.html" class="home-link">
+                🏠 Inicio
+            </a>
+
+            <a href="perfil.html" class="user-name">
+                👤 ADMIN
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         ESTRUCTURA
+    ====================================================== -->
+
+    <div class="layout">
+
+        <!-- =================================================
+             PANEL IZQUIERDO
+        ================================================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                📘Curso
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="curso.html">
+                    🏠 Inicio del curso
+                </a>
+
+                <a href="contenido.html">
+                    📚 Contenido
+                </a>
+
+                <a href="calificaciones.html" class="active">
+                    📊 Calificaciones
+                </a>
+
+                <a href="profesor.html">
+                    👨‍🏫 Profesor
+                </a>
+
+                <a href="horario.html">
+                    🕐 Horario
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="cerrar sesion.html" class="logout-button">
+                    🚪 Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             CONTENIDO
+        ================================================== -->
+
+        <main class="main-content">
+
+            <section class="calificaciones-page">
+
+                <!-- ENCABEZADO -->
+
+                <div class="section-heading">
+
+                    <span>
+                        RESULTADOS DE EVALUACIÓN
+                    </span>
+
+                    <h2>
+                        Calificaciones
+                    </h2>
+
+                </div>
+
+
+                <!-- INFORMACIÓN DEL CURSO -->
+
+                <div class="course-info">
+
+                    <div class="info-item">
+
+                        <span>
+                            Estudiante
+                        </span>
+
+                        <strong>
+                            JUAN ESTEBAN ORTIZ RENDON
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Curso
+                        </span>
+
+                        <strong>
+                            Desarrollo Web
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Promedio general
+                        </span>
+
+                        <strong id="promedio-general">
+                            0.0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TABLA -->
+
+                <div class="grades-container">
+
+                    <div class="grades-header">
+
+                        <h3>
+                            Registro de calificaciones
+                        </h3>
+
+                        <p>
+                            Consulta las calificaciones obtenidas en las actividades del curso.
+                        </p>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table class="grades-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Módulo
+                                    </th>
+
+                                    <th>
+                                        Actividad / Evidencia
+                                    </th>
+
+                                    <th>
+                                        Fecha
+                                    </th>
+
+                                    <th>
+                                        Calificación
+                                    </th>
+
+                                    <th>
+                                        Estado
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="tabla-calificaciones">
+                                <!-- JS -->
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../JS/calificaciones.js"></script>
+
+</body>
+</html>

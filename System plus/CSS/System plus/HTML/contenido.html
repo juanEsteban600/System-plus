@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>System Plus | Desarrollo Web</title>
+
+    <link rel="stylesheet" href="../CSS/contenido.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="topbar">
+
+        <div class="brand">
+            SYSTEM PLUS
+        </div>
+
+        <nav class="topbar-nav">
+
+            <a href="dashboard.html" class="home-link">
+                🏠 Inicio
+            </a>
+
+            <a href="perfil.html" class="user-name">
+             <span>👤 ADMIN</span>
+        </a>
+         
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         ESTRUCTURA PRINCIPAL
+    ========================== -->
+
+    <div class="layout">
+
+
+        <!-- =========================
+             PANEL IZQUIERDO
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                📘 Curso
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="curso.html" class="active">
+                    🏠 Inicio del curso
+                </a>
+
+                <a href="contenido.html">
+                    📚 Contenido
+                </a>
+                <a href="calificaciones.html">
+                    📊 Calificaciones
+                </a>
+                <a href="profesor.html">
+                    👨‍🏫 Profesor
+                </a>
+
+                <a href="horario.html">
+                    🕐 Horario
+                </a>
+
+            </nav>
+
+
+            <!-- CERRAR SESIÓN ABAJO -->
+
+            <div class="sidebar-bottom">
+
+                <a href="cerrar sesion.html" class="logout-button">
+                    🚪 Cerrar sesión
+                </a>
+
+            </div>
+
+        </aside> 
+
+        <main class="contenido-main">
+
+    <!-- =========================
+         ANUNCIOS
+    ========================== -->
+    <section class="announcements-section">
+
+        <div class="section-heading">
+            <span>COMUNICACIONES</span>
+            <h2>Anuncios</h2>
+        </div>
+
+        <article class="announcement-card">
+
+            <div class="announcement-icon">
+                📢
+            </div>
+
+            <div class="announcement-content">
+
+                <div class="announcement-top">
+                    <span class="announcement-tag">
+                        IMPORTANTE
+                    </span>
+
+                    <span class="announcement-date">
+                        30 Sep 2026
+                    </span>
+                </div>
+
+                <h3>Nuevas actividades disponibles</h3>
+
+                <p>
+                    Ya puedes consultar las nuevas actividades y
+                    evidencias del curso. Revisa las fechas de entrega
+                    para mantener tu progreso actualizado.
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- =========================
+         MÓDULOS
+    ========================== -->
+    <section class="modules-section">
+
+        <div class="section-heading">
+            <span>CONTENIDO DEL CURSO</span>
+            <h2>Módulos</h2>
+        </div>
+
+
+        <!-- MÓDULO 1 -->
+        <article class="module">
+
+            <div class="module-header">
+
+                <div>
+                    <span class="module-number">
+                        MÓDULO 01
+                    </span>
+
+                    <h3>
+                        Introducción a HTML
+                    </h3>
+
+                    <p>
+                        Conoce los fundamentos y la estructura
+                        básica de una página web.
+                    </p>
+                </div>
+
+                <span class="module-arrow">
+                    ▼
+                </span>
+
+            </div>
+
+
+            <div class="module-content">
+
+                <!-- EVIDENCIA 1 -->
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        📖
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE CONOCIMIENTO
+                        </span>
+
+                        <h4>
+                            Consulta sobre HTML
+                        </h4>
+
+                        <p>
+                            Investiga los conceptos fundamentales
+                            de HTML y sus principales etiquetas.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>05 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>05 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status delivered">
+                        ● Entregada
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <!-- EVIDENCIA 2 -->
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        💻
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE DESEMPEÑO
+                        </span>
+
+                        <h4>
+                            Creación de una página HTML
+                        </h4>
+
+                        <p>
+                            Construye una página utilizando
+                            etiquetas HTML básicas.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>10 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>10 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status pending">
+                        ● Entregada
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <!-- EVIDENCIA 3 -->
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        📄
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE PRODUCTO
+                        </span>
+
+                        <h4>
+                            Hoja de vida en HTML
+                        </h4>
+
+                        <p>
+                            Diseña una hoja de vida utilizando
+                            una estructura HTML organizada.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>15 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>15 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status reviewing">
+                        ● En revisión
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+            </div>
+
+        </article>
+
+
+        <!-- MÓDULO 2 -->
+        <article class="module collapsed">
+
+            <div class="module-header">
+
+                <div>
+                    <span class="module-number">
+                        MÓDULO 02
+                    </span>
+
+                    <h3>
+                        Diseño con CSS
+                    </h3>
+
+                    <p>
+                        Aprende a dar estilos y estructura visual
+                        a tus páginas web.
+                    </p>
+                </div>
+
+                <span class="module-arrow">
+                    ▼
+                </span>
+
+            </div>
+
+
+            <div class="module-content">
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        🎨
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE CONOCIMIENTO
+                        </span>
+
+                        <h4>
+                            Fundamentos de CSS
+                        </h4>
+
+                        <p>
+                            Identifica los principales conceptos
+                            utilizados en CSS.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>25 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>25 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status pending">
+                        ● Pendiente
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        🖌️
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE DESEMPEÑO
+                        </span>
+
+                        <h4>
+                            Diseño de una interfaz
+                        </h4>
+
+                        <p>
+                            Aplica estilos CSS para construir
+                            una interfaz organizada.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>28 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>28 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status delivered">
+                        ● Entregada
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        🌐
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE PRODUCTO
+                        </span>
+
+                        <h4>
+                            Página web con CSS
+                        </h4>
+
+                        <p>
+                            Crea una página web aplicando
+                            diferentes estilos CSS.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>31 Oct 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>31 Oct 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status expired">
+                        ● Vencida
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+            </div>
+
+        </article>
+
+
+        <!-- MÓDULO 3 -->
+        <article class="module collapsed">
+
+            <div class="module-header">
+
+                <div>
+                    <span class="module-number">
+                        MÓDULO 03
+                    </span>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Aprende programación e interacción
+                        para páginas web.
+                    </p>
+                </div>
+
+                <span class="module-arrow">
+                    ▼
+                </span>
+
+            </div>
+
+
+            <div class="module-content">
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        ⚙️
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE CONOCIMIENTO
+                        </span>
+
+                        <h4>
+                            Fundamentos de JavaScript
+                        </h4>
+
+                        <p>
+                            Conoce las bases de JavaScript
+                            y su funcionamiento.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>05 Nov 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>05 Nov 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status pending">
+                        ● Pendiente
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        ⚡
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE DESEMPEÑO
+                        </span>
+
+                        <h4>
+                            Funciones y eventos
+                        </h4>
+
+                        <p>
+                            Implementa funciones y eventos
+                            utilizando JavaScript.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>08 Nov 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>08 Nov 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status pending">
+                        ● Pendiente
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+
+                <article class="evidence-card">
+
+                    <div class="evidence-icon">
+                        🚀
+                    </div>
+
+                    <div class="evidence-info">
+
+                        <span class="evidence-type">
+                            EVIDENCIA DE PRODUCTO
+                        </span>
+
+                        <h4>
+                            Proyecto JavaScript
+                        </h4>
+
+                        <p>
+                            Desarrolla un pequeño proyecto
+                            utilizando JavaScript.
+                        </p>
+
+                        <div class="evidence-dates">
+
+                            <span>
+                                📅 Entrega:
+                                <strong>12 Nov 2026</strong>
+                            </span>
+
+                            <span>
+                                ⏰ Vence:
+                                <strong>12 Nov 2026</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="evidence-status reviewing">
+                        ● En revisión
+                    </div>
+
+                    <button
+                        type="button"
+                        class="evidence-button"
+                    >
+                        Ver evidencia
+                    </button>
+
+                </article>
+
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+<script src="../JS/contenido.js"></script>
+
+</body>
+
+</html>

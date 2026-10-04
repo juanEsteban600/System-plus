@@ -1,0 +1,1130 @@
+:root {
+    --red: #c8102e;
+    --red-dark: #a80d25;
+    --red-light: #fff1f4;
+
+    --white: #ffffff;
+    --dark: #171717;
+    --gray: #777777;
+    --gray-light: #f5f6f8;
+    --border: #e5e5e5;
+
+    --green: #16834b;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    --shadow-hover: 0 8px 22px rgba(0, 0, 0, 0.10);
+
+    --radius: 10px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--gray-light);
+    color: var(--dark);
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   BARRA SUPERIOR
+========================================================= */
+
+.topbar {
+    height: 72px;
+    width: 100%;
+
+    background: var(--red);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* SYSTEM PLUS */
+
+.brand {
+    color: var(--white);
+
+    font-size: 22px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* NAVEGACIÓN */
+
+.topbar-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* LINKS SUPERIORES */
+
+.home-link,
+.user-name {
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    transition: background 0.2s ease;
+}
+
+.home-link:hover,
+.user-name:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.user-name {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ESTRUCTURA PRINCIPAL
+========================================================= */
+
+.layout {
+    display: flex;
+
+    min-height: calc(100vh - 72px);
+}
+
+
+/* =========================================================
+   PANEL IZQUIERDO
+========================================================= */
+
+.sidebar {
+    width: 245px;
+
+    background: var(--red);
+
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+
+    top: 72px;
+    left: 0;
+    bottom: 0;
+
+    z-index: 900;
+
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* TÍTULO */
+
+.sidebar-title {
+    padding: 25px 22px 18px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+/* MENÚ */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    padding: 14px 10px;
+}
+
+
+/* LINKS */
+
+.sidebar-menu a {
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 13px 14px;
+
+    margin-bottom: 4px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* HOVER */
+
+.sidebar-menu a:hover {
+    background: rgba(255, 255, 255, 0.13);
+
+    transform: translateX(2px);
+}
+
+
+/* ACTIVO */
+
+.sidebar-menu a.active {
+
+    background: var(--white);
+
+    color: var(--red);
+
+    font-weight: 700;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CERRAR SESIÓN
+========================================================= */
+
+.sidebar-bottom {
+    margin-top: auto;
+
+    padding: 15px 10px 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.logout-button {
+    display: block;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    padding: 13px 14px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background: rgba(0, 0, 0, 0.16);
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+
+.main-content {
+    margin-left: 245px;
+
+    width: calc(100% - 245px);
+
+    padding: 32px 35px 50px;
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL DEL CURSO
+========================================================= */
+
+.course-header {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    display: grid;
+
+    grid-template-columns:
+        280px
+        1fr
+        170px;
+
+    min-height: 235px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   CONTENIDO ACADÉMICO
+========================================= */
+
+.contenido-main {
+    width: calc(100% - 245px);
+    max-width: 1250px;
+    margin-left: 245px;
+    margin-right: auto;
+    padding: 35px 40px 60px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --red: #D71920;
+    --red-dark: #B51218;
+    --red-light: #FDEBED;
+
+    --white: #FFFFFF;
+    --dark: #1F2937;
+    --gray: #6B7280;
+    --gray-light: #F6F7F9;
+    --border: #E5E7EB;
+
+    --green: #16A34A;
+    --orange: #EA580C;
+    --blue: #2563EB;
+}
+
+
+/* =========================================
+   ENCABEZADOS DE SECCIÓN
+========================================= */
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading > span {
+    display: block;
+    margin-bottom: 6px;
+
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 27px;
+    font-weight: 750;
+}
+
+
+/* =========================================
+   ANUNCIOS
+========================================= */
+
+.announcements-section {
+    margin-bottom: 40px;
+}
+
+.announcement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 24px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--red);
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+
+    animation: announcementIn 0.6s ease both;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.announcement-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    background: var(--red-light);
+
+    border-radius: 12px;
+
+    font-size: 24px;
+}
+
+.announcement-content {
+    flex: 1;
+}
+
+.announcement-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 8px;
+}
+
+.announcement-tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 9px;
+
+    background: var(--red-light);
+
+    color: var(--red);
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.announcement-date {
+    color: var(--gray);
+
+    font-size: 12px;
+}
+
+.announcement-content h3 {
+    margin: 0 0 8px;
+
+    color: var(--dark);
+
+    font-size: 19px;
+}
+
+.announcement-content p {
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   MÓDULOS
+========================================= */
+
+.modules-section {
+    margin-bottom: 40px;
+}
+
+.module {
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+    animation: moduleIn 0.55s ease both;
+
+    transition:
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.module:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   CABECERA DEL MÓDULO
+========================================= */
+
+.module-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 24px 26px;
+
+    cursor: pointer;
+
+    background: var(--white);
+
+    transition:
+        background 0.25s ease;
+}
+
+.module-header:hover {
+    background: #fafafa;
+}
+
+.module-number {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--red);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.module-header h3 {
+    margin: 0 0 6px;
+
+    color: var(--dark);
+
+    font-size: 20px;
+}
+
+.module-header p {
+    margin: 0;
+
+    color: var(--gray);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.module-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    background: var(--red-light);
+
+    color: var(--red);
+
+    border-radius: 50%;
+
+    font-size: 13px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================
+   MÓDULO ABIERTO / CERRADO
+========================================= */
+
+.module-content {
+    max-height: 2000px;
+
+    padding: 0 26px 26px;
+
+    opacity: 1;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.35s ease,
+        padding 0.35s ease;
+}
+
+.module.collapsed .module-content {
+    max-height: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    opacity: 0;
+}
+
+.module.collapsed .module-arrow {
+    transform: rotate(-90deg);
+}
+
+
+/* =========================================
+   EVIDENCIAS
+========================================= */
+
+.evidence-card {
+    display: grid;
+
+    grid-template-columns: 52px minmax(0, 1fr) auto auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 14px;
+    padding: 19px;
+
+    background: #FAFAFA;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.evidence-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #d6d9de;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   ICONO EVIDENCIA
+========================================= */
+
+.evidence-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    background: var(--red-light);
+
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+
+/* =========================================
+   INFORMACIÓN EVIDENCIA
+========================================= */
+
+.evidence-info {
+    min-width: 0;
+}
+
+.evidence-type {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--red);
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.evidence-info h4 {
+    margin: 0 0 5px;
+
+    color: var(--dark);
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.evidence-info p {
+    margin: 0 0 10px;
+
+    color: var(--gray);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FECHAS
+========================================= */
+
+.evidence-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.evidence-dates span {
+    color: var(--gray);
+
+    font-size: 11px;
+}
+
+.evidence-dates strong {
+    color: var(--dark);
+    font-weight: 650;
+}
+
+
+/* =========================================
+   ESTADOS
+========================================= */
+
+.evidence-status,
+.activity-status {
+    white-space: nowrap;
+
+    font-size: 11px;
+    font-weight: 750;
+}
+
+.evidence-status.delivered,
+.activity-status.delivered {
+    color: var(--green);
+}
+
+.evidence-status.pending,
+.activity-status.pending {
+    color: var(--orange);
+}
+
+.evidence-status.reviewing {
+    color: var(--blue);
+}
+
+.evidence-status.expired,
+.activity-status.expired {
+    color: var(--red);
+}
+
+
+/* =========================================
+   BOTÓN EVIDENCIA
+========================================= */
+
+.evidence-button {
+    padding: 10px 14px;
+
+    background: var(--red);
+
+    color: var(--white);
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.evidence-button:hover {
+    background: var(--red-dark);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(215, 25, 32, 0.22);
+}
+
+.evidence-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ACTIVIDADES
+========================================= */
+
+.module-activities {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.activities-heading {
+    margin-bottom: 15px;
+}
+
+.activities-heading > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--red);
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+}
+
+.activities-heading h4 {
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   ITEM DE ACTIVIDAD
+========================================= */
+
+.activity-item {
+    display: grid;
+
+    grid-template-columns: 45px minmax(0, 1fr) auto auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item:hover {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   ICONO ACTIVIDAD
+========================================= */
+
+.activity-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    background: var(--gray-light);
+
+    border-radius: 10px;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   INFORMACIÓN ACTIVIDAD
+========================================= */
+
+.activity-info h4 {
+    margin: 0 0 5px;
+
+    color: var(--dark);
+
+    font-size: 14px;
+}
+
+.activity-info span {
+    color: var(--gray);
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   BOTÓN ACTIVIDAD
+========================================= */
+
+.activity-action button {
+    padding: 8px 12px;
+
+    background: transparent;
+
+    color: var(--red);
+
+    border: 1px solid var(--red);
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.activity-action button:hover {
+    background: var(--red);
+
+    color: var(--white);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes announcementIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes moduleIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .contenido-main {
+        padding: 30px 25px 50px;
+    }
+
+    .evidence-card {
+        grid-template-columns: 52px minmax(0, 1fr);
+    }
+
+    .evidence-status {
+        grid-column: 2;
+    }
+
+    .evidence-button {
+        grid-column: 2;
+        width: fit-content;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .contenido-main {
+        padding: 25px 18px 40px;
+    }
+
+    .announcement-card {
+        padding: 18px;
+    }
+
+    .announcement-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .module-header {
+        padding: 20px;
+    }
+
+    .module-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .evidence-card {
+        grid-template-columns: 45px minmax(0, 1fr);
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .evidence-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .evidence-info h4 {
+        font-size: 14px;
+    }
+
+    .evidence-dates {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .activity-item {
+        grid-template-columns: 45px minmax(0, 1fr);
+    }
+
+    .activity-status {
+        grid-column: 2;
+    }
+
+    .activity-action {
+        grid-column: 2;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .contenido-main {
+        padding: 20px 14px 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .announcement-card {
+        gap: 13px;
+    }
+
+    .announcement-icon {
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+
+    .module-header h3 {
+        font-size: 17px;
+    }
+
+    .module-header p {
+        font-size: 12px;
+    }
+
+    .evidence-card {
+        grid-template-columns: 1fr;
+    }
+
+    .evidence-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .evidence-status,
+    .evidence-button {
+        grid-column: 1;
+    }
+
+    .evidence-button {
+        width: 100%;
+    }
+
+    .activity-item {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-status,
+    .activity-action {
+        grid-column: 1;
+    }
+
+    .activity-action button {
+        width: 100%;
+    }
+
+}

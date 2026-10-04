@@ -1,0 +1,677 @@
+/* =========================================================
+   SYSTEM PLUS
+   CALIFICACIONES
+========================================================= */
+
+
+:root {
+
+    --red: #c8102e;
+    --red-dark: #a80d25;
+    --red-light: #fff1f4;
+
+    --white: #ffffff;
+    --dark: #171717;
+    --gray: #777777;
+    --gray-light: #f5f6f8;
+    --border: #e5e5e5;
+
+    --green: #16834b;
+
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    --shadow-hover: 0 8px 22px rgba(0, 0, 0, 0.10);
+
+    --radius: 10px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--gray-light);
+
+    color: var(--dark);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   BARRA SUPERIOR
+   IGUAL AL ORIGINAL
+========================================================= */
+
+.topbar {
+
+    height: 72px;
+    width: 100%;
+
+    background: var(--red);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* SYSTEM PLUS */
+
+.brand {
+
+    color: var(--white);
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* NAVEGACIÓN */
+
+.topbar-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* LINKS SUPERIORES */
+
+.home-link,
+.user-name {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    transition: background 0.2s ease;
+}
+
+
+.home-link:hover,
+.user-name:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.user-name {
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ESTRUCTURA
+========================================================= */
+
+.layout {
+
+    display: flex;
+
+    min-height: calc(100vh - 72px);
+}
+
+
+/* =========================================================
+   PANEL IZQUIERDO
+   IGUAL AL ORIGINAL
+========================================================= */
+
+.sidebar {
+
+    width: 245px;
+
+    background: var(--red);
+
+    color: var(--white);
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: fixed;
+
+    top: 72px;
+
+    left: 0;
+
+    bottom: 0;
+
+    z-index: 900;
+
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* TÍTULO */
+
+.sidebar-title {
+
+    padding: 25px 22px 18px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+/* MENÚ */
+
+.sidebar-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 14px 10px;
+}
+
+
+/* LINKS */
+
+.sidebar-menu a {
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 13px 14px;
+
+    margin-bottom: 4px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* HOVER */
+
+.sidebar-menu a:hover {
+
+    background: rgba(255, 255, 255, 0.13);
+
+    transform: translateX(2px);
+}
+
+
+/* ACTIVO */
+
+.sidebar-menu a.active {
+
+    background: var(--white);
+
+    color: var(--red);
+
+    font-weight: 700;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CERRAR SESIÓN
+   IGUAL AL ORIGINAL
+========================================================= */
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    padding: 15px 10px 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+.logout-button {
+
+    display: block;
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding: 13px 14px;
+
+    border-radius: 7px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.logout-button:hover {
+
+    background: rgba(0, 0, 0, 0.16);
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+
+.main-content {
+
+    margin-left: 245px;
+
+    width: calc(100% - 245px);
+
+    padding: 32px 35px 50px;
+}
+
+
+/* =========================================================
+   PÁGINA DE CALIFICACIONES
+========================================================= */
+
+.calificaciones-page {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.section-heading {
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading > span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--red);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+
+.section-heading h2 {
+
+    margin: 0;
+
+    color: var(--dark);
+
+    font-size: 27px;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL CURSO
+========================================================= */
+
+.course-info {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr;
+
+    gap: 20px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    padding: 22px 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.info-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.info-item span {
+
+    color: var(--gray);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+}
+
+
+.info-item strong {
+
+    color: var(--dark);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+#promedio-general {
+
+    color: var(--red);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   CONTENEDOR DE TABLA
+========================================================= */
+
+.grades-container {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ENCABEZADO DE TABLA
+========================================================= */
+
+.grades-header {
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.grades-header h3 {
+
+    margin-bottom: 6px;
+
+    color: var(--dark);
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+
+.grades-header p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLA
+========================================================= */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.grades-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 750px;
+}
+
+
+/* =========================================================
+   CABECERA
+========================================================= */
+
+.grades-table thead {
+
+    background: var(--gray-light);
+}
+
+
+.grades-table th {
+
+    padding: 16px 20px;
+
+    color: var(--dark);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   CELDAS
+========================================================= */
+
+.grades-table td {
+
+    padding: 17px 20px;
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+    border-bottom: 1px solid var(--border);
+
+    vertical-align: middle;
+}
+
+
+.grades-table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+.grades-table tbody tr {
+
+    transition: background 0.2s ease;
+}
+
+
+.grades-table tbody tr:hover {
+
+    background: var(--red-light);
+}
+
+
+/* =========================================================
+   CALIFICACIÓN
+========================================================= */
+
+.grade {
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.grade.approved {
+
+    color: var(--green);
+}
+
+
+.grade.pending {
+
+    color: var(--gray);
+}
+
+
+/* =========================================================
+   ESTADO
+========================================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.status.delivered {
+
+    color: var(--green);
+
+    background: #eaf7f0;
+}
+
+
+.status.pending {
+
+    color: #c27800;
+
+    background: #fff5df;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .course-info {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .main-content {
+
+        padding: 25px 20px 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .main-content {
+
+        padding: 20px 15px 35px;
+    }
+
+    .section-heading h2 {
+
+        font-size: 24px;
+    }
+
+}
